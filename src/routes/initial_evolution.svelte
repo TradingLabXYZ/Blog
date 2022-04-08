@@ -8,7 +8,7 @@
   <Header/>
   <div class="grid xs:grid-cols-none sm:grid-cols-8 bg-universe py-12">
     <div class="xs:hidden sm:block sm:col-span-2"></div>
-    <div class="prose xs:col-span-none sm:col-span-4 text-cream text-xl xs:px-8 sm:px-0 text-justify tracking-wider">
+    <div class="xs:col-span-none sm:col-span-4 text-cream text-xl xs:px-8 sm:px-0 xs:text-left sm:text-justify tracking-wider space-y-6">
       <div class="text-6xl">
         Initial Evolution
       </div>
