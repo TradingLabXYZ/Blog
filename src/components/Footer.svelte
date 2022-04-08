@@ -6,7 +6,7 @@
   import Youtube from '../components/svg/Youtube.svelte';
 </script>
 
-<div class="flex flex-col justify-center pb-20 -mt-20 text-center pt-44 bg-gradient-to-br from-universelight via-universe to-universe space-y-4">
+<div class="flex flex-col justify-center pb-20 text-center pt-44 bg-gradient-to-br from-universelight via-universe to-universe space-y-4">
   <div class="flex flex-row justify-center xs:space-x-2 sm:space-x-6">
     <button>
       <a href="https://discord.gg/PEEUfrbQ9c" target="_blank">
