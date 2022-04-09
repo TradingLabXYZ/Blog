@@ -22,6 +22,7 @@
         has been achieved till now and how we plan to manage
         the next steps.
       </p>
+      <div class="font-bold text-3xl">It often starts with a problem</div>
       <p>
         The idea behind TradingLab took shape during the first months
         of 2021. At that time a wild crypto bull run was happening,
@@ -46,6 +47,7 @@
         In the meanwhile, removing complexities and features, leaving
         TradingLab as much naked as possible.
       </p>
+      <div class="font-bold text-3xl">Celebrating achievements</div>
       <p>
         For the techies out there, TradingLab shines because of its simplicity:
         a Golang back-end, a Vuejs front-end, a web3 authentication system,
@@ -64,8 +66,8 @@
         landing page, a youtube page, a twitter profile, a discord community,
         and now also this highly customised blog.
       </p>
+      <div class="font-bold text-3xl">Now, what's next?</div>
       <p>
-        Now, what's next?
         We have identified three macro phases we need in order to fully fulfill
         our (initial) ambitions. The first one is the one you just read about,
         creating a lean working product potentially ready to scale with a fresh brand identity.
@@ -83,7 +85,7 @@
         smart contracts. A lot of time has been invested already in this direction,
         and we can't wait to be able to finally apply our knowledge into it.
       </p>
-      <p>
+      <p class="font-bold">
         Thanks so much for finding the time to read these few words.
       </p>
     </div>
