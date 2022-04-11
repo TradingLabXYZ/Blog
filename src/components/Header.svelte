@@ -1,5 +1,6 @@
 <div class="flex flex-col text-cream">
-  <div class="sticky top-0 z-10 flex flex-row items-center justify-around border-b-2 border-magentashine xs:p-0 sm:p-4 bg-universe xs:h-16 sm:h-20 md:h-24">
+  <div class="sticky top-0 z-10 flex flex-row items-center justify-around border-b-2 border-magentashine xs:p-0 sm:p-4
+    bg-universe xs:h-16 sm:h-20 md:h-24">
     <a
       href="https://www.tradinglab.xyz/"
       class="flex flex-row items-center align-middle space-x-2">

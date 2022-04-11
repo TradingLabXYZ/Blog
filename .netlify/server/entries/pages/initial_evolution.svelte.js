@@ -27,7 +27,7 @@ const prerender = true;
 const Initial_evolution = (0, import_index_2dc61825.c)(($$result, $$props, $$bindings, slots) => {
   return `<div>${(0, import_index_2dc61825.v)(import_Header_5927a997.H, "Header").$$render($$result, {}, {}, {})}
   <div class="${"grid xs:grid-cols-none sm:grid-cols-8 bg-universe py-12"}"><div class="${"xs:hidden sm:block sm:col-span-2"}"></div>
-    <div class="${"prose xs:col-span-none sm:col-span-4 text-cream text-xl xs:px-8 sm:px-0 text-justify tracking-wider"}"><div class="${"text-6xl"}">Initial Evolution
+    <div class="${"xs:col-span-none sm:col-span-4 text-cream text-xl xs:px-8 sm:px-0 xs:text-left sm:text-justify tracking-wider space-y-6"}"><div class="${"text-6xl"}">Initial Evolution
       </div>
       <p>Despite we are only at the beginning,
         it has been an incredible journey so far.
@@ -38,6 +38,7 @@ const Initial_evolution = (0, import_index_2dc61825.c)(($$result, $$props, $$bin
         has been achieved till now and how we plan to manage
         the next steps.
       </p>
+      <div class="${"font-bold text-3xl"}">It often starts with a problem</div>
       <p>The idea behind TradingLab took shape during the first months
         of 2021. At that time a wild crypto bull run was happening,
         and keeping track of a wallet became a critical activity
@@ -60,6 +61,7 @@ const Initial_evolution = (0, import_index_2dc61825.c)(($$result, $$props, $$bin
         In the meanwhile, removing complexities and features, leaving
         TradingLab as much naked as possible.
       </p>
+      <div class="${"font-bold text-3xl"}">Celebrating achievements</div>
       <p>For the techies out there, TradingLab shines because of its simplicity:
         a Golang back-end, a Vuejs front-end, a web3 authentication system,
         a Postgresql database and a few CI/CD pipelines. There would be so much
@@ -76,8 +78,8 @@ const Initial_evolution = (0, import_index_2dc61825.c)(($$result, $$props, $$bin
         landing page, a youtube page, a twitter profile, a discord community,
         and now also this highly customised blog.
       </p>
-      <p>Now, what&#39;s next?
-        We have identified three macro phases we need in order to fully fulfill
+      <div class="${"font-bold text-3xl"}">Now, what&#39;s next?</div>
+      <p>We have identified three macro phases we need in order to fully fulfill
         our (initial) ambitions. The first one is the one you just read about,
         creating a lean working product potentially ready to scale with a fresh brand identity.
         Now starts the second one, which is fully about marketing.
@@ -93,7 +95,7 @@ const Initial_evolution = (0, import_index_2dc61825.c)(($$result, $$props, $$bin
         smart contracts. A lot of time has been invested already in this direction,
         and we can&#39;t wait to be able to finally apply our knowledge into it.
       </p>
-      <p>Thanks so much for finding the time to read these few words.
+      <p class="${"font-bold"}">Thanks so much for finding the time to read these few words.
       </p></div></div>
   ${(0, import_index_2dc61825.v)(import_Header_5927a997.F, "Footer").$$render($$result, {}, {}, {})}</div>`;
 });

@@ -853,7 +853,12 @@ async function render_response({
       stores: {
         page: writable(null),
         navigating: writable(null),
-        session,
+        session: __spreadProps(__spreadValues({}, session), {
+          subscribe: (fn) => {
+            is_private = true;
+            return session.subscribe(fn);
+          }
+        }),
         updated
       },
       page: {
@@ -879,17 +884,7 @@ async function render_response({
     for (let i = 0; i < branch.length; i += 1) {
       props[`props_${i}`] = await branch[i].loaded.props;
     }
-    let session_tracking_active = false;
-    const unsubscribe = session.subscribe(() => {
-      if (session_tracking_active)
-        is_private = true;
-    });
-    session_tracking_active = true;
-    try {
-      rendered = options.root.render(props);
-    } finally {
-      unsubscribe();
-    }
+    rendered = options.root.render(props);
   } else {
     rendered = { head: "", html: "", css: { code: "", map: null } };
   }
@@ -1228,7 +1223,7 @@ async function load_node({
           if (opts.body && typeof opts.body !== "string") {
             throw new Error("Request body must be a string");
           }
-          response = await respond(new Request(new URL(requested, event.url).href, opts), options, {
+          response = await respond(new Request(new URL(requested, event.url).href, __spreadProps(__spreadValues({}, opts), { credentials: void 0 })), options, {
             getClientAddress: state.getClientAddress,
             initiator: route,
             prerender: state.prerender
@@ -1981,7 +1976,7 @@ function set_paths(paths) {
 }
 function set_prerendering(value) {
 }
-const template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<meta name="description" content="Svelte demo app" />\n		<link rel="icon" href="' + assets2 + '/favicon.ico" />\n    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>\n    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.4.x/dist/typography.min.css"/>\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + '\n	</head>\n  <body class="font-Montserrat">\n		<div>' + body + "</div>\n	</body>\n  <script>\n    var _mtm = window._mtm = window._mtm || [];\n    _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n    g.async=true; g.src='https://analytics.tradinglab.xyz/js/container_Dmh6k0wi.js'; s.parentNode.insertBefore(g,s);\n  <\/script>\n</html>\n";
+const template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<meta name="description" content="Svelte demo app" />\n		<link rel="icon" href="' + assets2 + '/favicon.ico" />\n    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + '\n	</head>\n  <body class="font-Montserrat">\n		<div>' + body + "</div>\n	</body>\n  <script>\n    var _mtm = window._mtm = window._mtm || [];\n    _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});\n    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n    g.async=true; g.src='https://analytics.tradinglab.xyz/js/container_Dmh6k0wi.js'; s.parentNode.insertBefore(g,s);\n  <\/script>\n</html>\n";
 let read = null;
 set_paths({ "base": "", "assets": "" });
 let default_protocol = "https";
