@@ -4,6 +4,7 @@
   import Github from '../components/svg/Github.svelte';
   import Metafora from '../components/svg/Metafora.svelte';
   import Youtube from '../components/svg/Youtube.svelte';
+  import Polyscan from '../components/svg/Polyscan.svelte';
 </script>
 
 <div class="flex flex-col justify-center pb-20 text-center pt-44 bg-gradient-to-br from-universelight via-universe to-universe space-y-4">
@@ -31,6 +32,11 @@
     <button>
       <a href="https://www.youtube.com/channel/UC0MysGuteFUSLrTpzSHdoIg" target="_blank">
         <Youtube/>
+      </a>
+    </button>
+    <button>
+      <a href="https://polygonscan.com/token/0x01962c00c783ce44c5b031c07435f2dc4a627394" target="_blank">
+        <Polyscan/>
       </a>
     </button>
   </div>
