@@ -2,12 +2,12 @@
   <h1 class="font-bold xs:text-3xl sm:text-4xl text-center">
     Crypto Community Laboratory
   </h1>
-  <div class="flex flex-col mx-auto xs:w-4/5 sm:w-2/4 text-xl my-2 space-y-2">
-    <p>
+  <div class="text-justify flex flex-col mx-auto xs:w-4/5 sm:w-2/4 text-xl my-2 space-y-2">
+    <p class="">
       TradingLab aims to create a funny, entertaining, never ending experience in which a crypto community can grow and
       learn from each others simply sharing their crypto portfolio.
     </p>
-    <p>
+    <p class="">
       Here on this blog our crypto community can enjoy our latest updates, as well as learning interesting new things
       about the exciting crypto world. 
     </p>
