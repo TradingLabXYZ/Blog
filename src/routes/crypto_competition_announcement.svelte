@@ -5,6 +5,11 @@
   import Footer from '../components/Footer.svelte';
 </script>
 
+<script>
+  import { page } from '$app/stores';
+  const source = $page.url.searchParams.get('source');
+</script>
+
 <div>
   <Header/>
   <div class="bg-universe text-cream py-12 tracking-wider leading-8 text-xl">
@@ -24,7 +29,7 @@
             May 2022</b>.
         </p>
         <div class="my-8">
-          <a href="https://tradinglab.xyz/crypto_competition/guess_btc_price?blog" target="_blank">
+          <a href="https://tradinglab.xyz/crypto_competition/guess_btc_price?source={source}" target="_blank">
             <button
               id="connectButton"
               class="p-2 flex m-auto font-bold rounded hover:bg-blueshine bg-magentashine"
@@ -49,7 +54,7 @@
           We have decided to use Million Token as main coin for our prizes
           because of its unbeatable tokenomics. There are only 1'000'000 tokens in circulation,
           this makes extremely easy to understand the total prize of the competition.
-          At the time of this writing 1 MM token is worth around 5$, so it total
+          At the time of this writing 1 MM token is worth around 5$, so in total
           the winner will receive around 50$.
           Check out more about Million Token
           <u><a href="https://www.milliontoken.org/" target="_blank">
@@ -62,8 +67,8 @@
           In order to engage more our crypto community with TradingLab platform,
           we have created a native token which will be used in the future
           in multiple ways. For the moment this token will be distributed
-          amount the competition's partecipants, rewarding user that will
-          interact more and more with platform.
+          amount the competition's participants, rewarding user that will
+          interact more and more with the platform.
           Check more information about TradingLab token 
           <u><a href="https://polygonscan.com/token/0x01962c00c783ce44c5b031c07435f2dc4a627394" rel="_blank">on the official page
           on Polyscan</a></u>.
