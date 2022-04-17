@@ -81,7 +81,7 @@
           for the warm support during the development of this first competition.<br>
           The following members in particular:
           <li><u><a href="https://twitter.com/R3WIREDMM" rel="_blank">R3WIREDMM</a></u></li>
-          <li><u><a href="https://twitter.com/simonsaysz" rel="_blank">Vanessa</a></u></li>
+          <li><u><a href="https://twitter.com/simonsaysz" rel="_blank">CryptoQueen24</a></u></li>
           <li><u><a href="https://twitter.com/NFTYoutube" rel="_blank">NFT Daily</a></u></li>
           <li><u><a href="https://twitter.come/MetaMedallist" rel="_blank">Mad Max</a></u></li>
           <li><u><a href="https://twitter.com/Reprobus2" rel="_blank">Reprobus2</a></u></li>
