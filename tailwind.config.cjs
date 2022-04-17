@@ -28,7 +28,7 @@ module.exports = {
         oldpurple: "#252083",
         sandpurple: "#26327F"
       }
-    },
+    }
   }
 }
 

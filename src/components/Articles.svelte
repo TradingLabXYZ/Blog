@@ -1,4 +1,4 @@
-<div class="flex flex-col xs:py-8 sm:py-12 bg-universe text-cream">
+<div class="flex flex-col xs:py-8 sm:py-12 bg-universe text-cream bottom-3">
   <h1 class="font-bold xs:text-3xl sm:text-4xl text-center">
     Crypto Community Laboratory
   </h1>
@@ -12,7 +12,34 @@
       about the exciting crypto world. 
     </p>
   </div>
-  <div class="flex justify-center xs:space-y-8 sm:space-y-20 xs:my-4 sm:my-10">
+  <div class="flex flex-col justify-center xs:space-y-8 sm:space-y-20 my-8 w-3/5 m-auto">
+
+    <!-- SECOND ARTICLE -->
+    <a href="/crypto_competition_announcement"
+      class="flex flex-col bg-sandpurple xs:p-2 sm:p-4 rounded-md">
+      <div class="bg-oldpurple flex xs:flex-col sm:flex-row space-x-4 align-middle items-center justify-center">
+        <h3 class="text-md">
+          17 April 2022
+        </h3>
+        <h2 class="font-bold text-3xl">
+          Crypto competition announcement
+        </h2>
+      </div>
+      <div class="flex xs:flex-col sm:flex-row xs:text-md sm:text-xl justify-center align-middle items-center">
+        <p class="xs:px-4 sm:px-12 space-y-4 xs:mt-4 sm:mt-8 text-justify sm:max-w-xl">
+          Building a crypto community around an online 
+          service requires the development of innovative
+          marketing strategies. We are thrilled today
+          to publicy announce to our crypto community
+          how TradingLab has prepared a first crypto
+          competition in which you are invited to...
+        </p>
+        <img
+          src="/articles/2_FirstCompetition/btcmm.png"
+          class="xs:h-20 sm:h-40 rounded-xl"
+          alt="Bitcoin and Million Token">
+      </div>
+    </a>
 
     <!-- FIRST ARTICLE -->
     <a href="/initial_evolution"
