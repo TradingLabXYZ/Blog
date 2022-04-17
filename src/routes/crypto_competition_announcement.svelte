@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	export const prerender = true;
+	/* export const prerender = true; */
   import { MetaTags } from 'svelte-meta-tags';
   import Header from '../components/Header.svelte';
   import Footer from '../components/Footer.svelte';
