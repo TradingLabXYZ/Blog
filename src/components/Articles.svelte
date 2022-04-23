@@ -4,7 +4,7 @@
   </h1>
   <div class="text-justify flex flex-col mx-auto xs:w-4/5 sm:w-2/4 text-xl my-2 space-y-2">
     <p class="">
-      TradingLab aims to create a funny, entertaining, never ending experience in which a crypto community can grow and
+      TradingLab aims to create a fun, entertaining, never ending experience in which a crypto community can grow and
       learn from each others simply sharing their crypto portfolio.
     </p>
     <p class="">

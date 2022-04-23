@@ -14,13 +14,13 @@
 
 <MetaTags
   title="TradingLab - Crypto Community Blog"
-  description="TradingLab aims to create a funny, entertaining, never ending user experience in which crypto passionate can converge, learning and earning from each others simply sharing their crypto portfolios."
+  description="TradingLab aims to create a fun, entertaining, never ending user experience in which crypto passionate can converge, learning and earning from each others simply sharing their crypto portfolios."
   canonical="https://blog.tradinglab.xyz"
   openGraph={{
     url: 'https://blog.tradinglab.xyz',
     type: 'website',
     title: 'TradingLab - Crypto Community Blog',
-    description: 'TradingLab aims to create a funny, entertaining, never ending user experience in which crypto passionate can converge, learning and earning from each others simply sharing their crypto portfolios.',
+    description: 'TradingLab aims to create a fun, entertaining, never ending user experience in which crypto passionate can converge, learning and earning from each others simply sharing their crypto portfolios.',
     images: [
       {
         url: 'https://tradinglab.xyz/img/logo.181ac5cb.png',
@@ -33,7 +33,7 @@
   twitter={{
     cardType: 'summary',
     title: 'TradingLab - Crypto Community Blog',
-    description: 'TradingLab aims to create a funny, entertaining, never ending user experience in which crypto passionate can converge, learning and earning from each others simply sharing their crypto portfolios.',
+    description: 'TradingLab aims to create a fun, entertaining, never ending user experience in which crypto passionate can converge, learning and earning from each others simply sharing their crypto portfolios.',
     image: 'https://tradinglab.xyz/img/logo.181ac5cb.png',
     imageAlt: 'TradingLab logo'
   }}
