@@ -4,7 +4,7 @@
     "src": ".svelte-kit/build/index.js",
     "isEntry": true,
     "imports": [
-      "_index-2dc61825.js"
+      "_index-be5d7ba6.js"
     ],
     "dynamicImports": [
       ".svelte-kit/build/hooks.js"
@@ -15,10 +15,10 @@
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index-2dc61825.js"
+      "_index-be5d7ba6.js"
     ],
     "css": [
-      "assets/entries/pages/__layout.svelte-7ae04ec9.css"
+      "assets/entries/pages/__layout.svelte-3f8e5615.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -26,7 +26,27 @@
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
-      "_index-2dc61825.js"
+      "_index-be5d7ba6.js"
+    ]
+  },
+  "src/routes/crypto_community_presentation.svelte": {
+    "file": "entries/pages/crypto_community_presentation.svelte.js",
+    "src": "src/routes/crypto_community_presentation.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-be5d7ba6.js",
+      "_MetaTags-0792d901.js",
+      "_stores-86a9233a.js"
+    ]
+  },
+  "src/routes/crypto_competition_announcement.svelte": {
+    "file": "entries/pages/crypto_competition_announcement.svelte.js",
+    "src": "src/routes/crypto_competition_announcement.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-be5d7ba6.js",
+      "_MetaTags-0792d901.js",
+      "_stores-86a9233a.js"
     ]
   },
   "src/routes/index.svelte": {
@@ -34,8 +54,8 @@
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "imports": [
-      "_index-2dc61825.js",
-      "_Header-5927a997.js"
+      "_index-be5d7ba6.js",
+      "_MetaTags-0792d901.js"
     ]
   },
   "src/routes/initial_evolution.svelte": {
@@ -43,17 +63,23 @@
     "src": "src/routes/initial_evolution.svelte",
     "isEntry": true,
     "imports": [
-      "_index-2dc61825.js",
-      "_Header-5927a997.js"
+      "_index-be5d7ba6.js",
+      "_MetaTags-0792d901.js"
     ]
   },
-  "_index-2dc61825.js": {
-    "file": "chunks/index-2dc61825.js"
+  "_index-be5d7ba6.js": {
+    "file": "chunks/index-be5d7ba6.js"
   },
-  "_Header-5927a997.js": {
-    "file": "chunks/Header-5927a997.js",
+  "_MetaTags-0792d901.js": {
+    "file": "chunks/MetaTags-0792d901.js",
     "imports": [
-      "_index-2dc61825.js"
+      "_index-be5d7ba6.js"
+    ]
+  },
+  "_stores-86a9233a.js": {
+    "file": "chunks/stores-86a9233a.js",
+    "imports": [
+      "_index-be5d7ba6.js"
     ]
   },
   ".svelte-kit/build/hooks.js": {

@@ -20,8 +20,8 @@ __export(stdin_exports, {
   default: () => _layout
 });
 module.exports = __toCommonJS(stdin_exports);
-var import_index_2dc61825 = require("../../chunks/index-2dc61825.js");
+var import_index_be5d7ba6 = require("../../chunks/index-be5d7ba6.js");
 var app = "";
-const _layout = (0, import_index_2dc61825.c)(($$result, $$props, $$bindings, slots) => {
+const _layout = (0, import_index_be5d7ba6.c)(($$result, $$props, $$bindings, slots) => {
   return `<main>${slots.default ? slots.default({}) : ``}</main>`;
 });

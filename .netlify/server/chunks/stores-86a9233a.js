@@ -17,27 +17,32 @@ var __copyProps = (to, from, except, desc) => {
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 var stdin_exports = {};
 __export(stdin_exports, {
-  default: () => Error2,
-  load: () => load
+  p: () => page
 });
 module.exports = __toCommonJS(stdin_exports);
-var import_index_be5d7ba6 = require("../../chunks/index-be5d7ba6.js");
-function load({ error, status }) {
-  return { props: { error, status } };
-}
-const Error2 = (0, import_index_be5d7ba6.c)(($$result, $$props, $$bindings, slots) => {
-  let { status } = $$props;
-  let { error } = $$props;
-  if ($$props.status === void 0 && $$bindings.status && status !== void 0)
-    $$bindings.status(status);
-  if ($$props.error === void 0 && $$bindings.error && error !== void 0)
-    $$bindings.error(error);
-  return `<h1>${(0, import_index_be5d7ba6.e)(status)}</h1>
-
-<pre>${(0, import_index_be5d7ba6.e)(error.message)}</pre>
-
-
-
-${error.frame ? `<pre>${(0, import_index_be5d7ba6.e)(error.frame)}</pre>` : ``}
-${error.stack ? `<pre>${(0, import_index_be5d7ba6.e)(error.stack)}</pre>` : ``}`;
-});
+var import_index_be5d7ba6 = require("./index-be5d7ba6.js");
+const getStores = () => {
+  const stores = (0, import_index_be5d7ba6.h)("__svelte__");
+  return {
+    page: {
+      subscribe: stores.page.subscribe
+    },
+    navigating: {
+      subscribe: stores.navigating.subscribe
+    },
+    get preloading() {
+      console.error("stores.preloading is deprecated; use stores.navigating instead");
+      return {
+        subscribe: stores.navigating.subscribe
+      };
+    },
+    session: stores.session,
+    updated: stores.updated
+  };
+};
+const page = {
+  subscribe(fn) {
+    const store = getStores().page;
+    return store.subscribe(fn);
+  }
+};
