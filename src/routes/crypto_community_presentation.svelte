@@ -124,9 +124,9 @@ import { listen } from 'svelte/internal';
 <MetaTags
   title="TradingLab - Crypto Community Presentation"
   description="They say that the first time is the most difficult one, not sure if it is true, but our first public speaking to a crypto community could not have been better. We have been invited from the Million Token community in their discord server to present TradingLab."
-  canonical="https://blog.tradinglab.xyz/"
+  canonical="https://blog.tradinglab.xyz"
   openGraph={{
-    url: 'https://blog.tradinglab.xyz/crypto_competition_announcement',
+    url: 'https://blog.tradinglab.xyz/crypto_community_presentation',
     type: 'article',
     title: 'TradingLab - Crypto Community Presentation',
     description: 'They say that the first time is the most difficult one, not sure if it is true, but our first public speaking to a crypto community could not have been better. We have been invited from the Million Token community in their discord server to present TradingLab.',
