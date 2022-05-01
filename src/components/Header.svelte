@@ -13,12 +13,21 @@
         Beta
       </div>
     </a>
-    <a
-      href="https://blog.tradinglab.xyz"
-      class="flex flex-row items-center justify-around align-middle xs:text-sm sm:text-base xs:space-x-0 sm:space-x-4">
-      <button class="font-bold rounded xs:p-1 sm:p-2 hover:bg-blueshine">
-        Home
-      </button>
-    </a>
+    <div class="flex flex-row space-x-2">
+      <a
+        href="https://blog.tradinglab.xyz"
+        class="flex flex-row items-center justify-around align-middle xs:text-sm sm:text-base xs:space-x-0 sm:space-x-4">
+        <button class="font-bold rounded xs:p-1 sm:p-2 hover:bg-magentashine bg-blueshine">
+          Home
+        </button>
+      </a>
+      <a
+        href="https://blog.tradinglab.xyz"
+        class="flex flex-row items-center justify-around align-middle xs:text-sm sm:text-base xs:space-x-0 sm:space-x-4">
+        <button class="font-bold rounded xs:p-1 sm:p-2 hover:bg-magentashine bg-blueshine">
+          Blog
+        </button>
+      </a>
+    </div>
   </div>
 </div>

@@ -8,11 +8,11 @@
 <div>
   <Header/>
   <div class="bg-universe text-cream py-12 tracking-wider leading-8 text-xl">
-    <div class="xs:w-4/6 lg:w-1/2 m-auto">
+    <div class="xs:w-10/12 lg:w-1/2 m-auto">
       <h1 class=" mb-3 text-6xl">
         Initial Evolution
       </h1>
-      <div class="text-justify">
+      <div class="xs:text-left sm:text-justify">
         <p>
           Despite we are only at the beginning,
           it has been an incredible journey so far.

@@ -14,11 +14,11 @@ import { listen } from 'svelte/internal';
 <div>
   <Header/>
   <div class="bg-universe text-cream py-12 tracking-wider leading-8 text-xl">
-    <div class="xs:w-4/6 lg:w-1/2 m-auto">
+    <div class="xs:w-10/12 lg:w-1/2 m-auto">
       <h1 class=" mb-3 xs:text-5xl sm:text-6xl">
         Crypto Community Presentation
       </h1>
-      <div class="text-justify">
+      <div class="xs:text-left sm:text-justify">
         <p>
           They say that the first time is the most difficult one,
           not sure if it is true, but our first public speaking
