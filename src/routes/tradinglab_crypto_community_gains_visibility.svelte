@@ -2,86 +2,119 @@
   import { MetaTags } from 'svelte-meta-tags';
   import Header from '../components/Header.svelte';
   import Footer from '../components/Footer.svelte';
+  import Arrow from '../components/svg/Arrow.svelte';
 </script>
 
 <script>
-  import { page } from '$app/stores';
-  const source = $page.url.searchParams.get('source');
+const platforms = {
+  DappRadar: {
+    url: "https://dappradar.com/polygon/defi/tradinglab",
+    textDisplay: "1 - DappRadar",
+    text: `DappRadar provides a global app store for decentralized applications.
+           The platform enables users to track, analyze, and discover 
+           decentralized applications. It tracks over 3,000  dapps across 
+           10+ blockchains, including Ethereum, EOS, ONT, and TRON, 
+           with plans to expand to others.`
+  },
+  StateOfTheDapps: {
+    url: "https://www.stateofthedapps.com/dapps/tradinglab",
+    textDisplay: "2 - State of the Dapp",
+    text: `State of the DApps is a not-for-profit curated directory of 
+           Decentralized Applications, also called DApps, which run on 
+           various several blockchains. State of the DApps was initially 
+           created to categorize and showcase developed projects built on 
+           the Ethereum Blockchain, but more recently we have added support 
+           for EOS, Steem and Hive.`
+  },
+  "Dapp.com": {
+    url: "https://www.dapp.com/app/tradinglab",
+    textDisplay: "3 - Dapp.com",
+    text: `Where decentralization becomes reality for all.
+           Dapp.com is the cross-chain platform for everyone to discover, 
+           use, and enjoy dapps with ease. Explore 3,000+ dapps built on 
+           Ethereum, EOS, Tron, Klaytn, NEO, Steem, IOST, TomoChain, and more.`
+  },
+  TheHiveIndex: {
+    url: "https://thehiveindex.com/communities/trading-lab/",
+    textDisplay: "4 - The Hive Index",
+    text: `Free resource for professionals, creatives, students, teachers, 
+           entrepreneurs, and those that are just looking for some likeminded souls 
+           to hang out with.`
+  },
+  DappExpert: {
+    url: "https://dapp.expert/dapp/en-matic-tradinglab",
+    textDisplay: "5 - Dapp Expert",
+    text: `An up-to-date, exciting and high-quality analysis of decentralized 
+    applications, allowing to always ve aware of all events on the blockchain.`
+  },
+}
 </script>
 
 <div>
   <Header/>
   <div class="bg-universe text-cream py-12 tracking-wider leading-8 text-xl">
     <div class="xs:w-10/12 lg:w-1/2 m-auto">
-      <h1 class=" mb-3 xs:text-5xl sm:text-6xl">
+      <h1 class=" mb-3 xs:text-5xl sm:text-6xl py-6">
         Tradinglab Gains Visibility
       </h1>
       <div class="xs:text-left sm:text-justify">
         <p>
-          Being listed by crypto communities is a mandatory step for several
-          reasons. First of all in order to get listed it is necessary to 
+        For TradingLab, being listed by crypto communities is a mandatory 
+        step to grow for several reasons.
+        </p><br>
+        <p>
+          First of all, to get listed it is necessary to 
           pass an initial screen of questions. If those questions are not
-          properly addressed, the application is rejected.
-          So it is always a good exercise...
-        </p>
-        <div class="my-8">
-          <a href="https://tradinglab.xyz/crypto_competition/guess_btc_price?source={source}" target="_blank">
-            <button
-              id="connectButton"
-              class="p-2 flex m-auto font-bold rounded hover:bg-blueshine bg-magentashine"
-              >
-              Go to the competition
-            </button>
+          properly addressed, the application is rejected. So it is always a 
+          good exercise trying to get listed because it is possible to 
+          identify weaknesses and dark spots within your idea.
+        </p><br>
+        <p>
+          A second beneficial point comes from improving SEO exposition
+          of a page. Google and other search engines will start realizing that
+          your project is relevant, increasing your chances to appear on 
+          search engines' results.
+        </p><br>
+        <p>
+          As third point, being listed means giving strength 
+          to a project, because of the coumponded effect of the web. Users see
+          TradingLab on a certain page, remember the brand, and potentially
+          return to it in the future.
+        </p><br>
+        <p>Lastly, being listed means having a ton of cool material to share and 
+        post on the different social networks, engaging users, and creating a 
+        positive network effect.
+        </p><br>
+        <h2 class="mt-6 mb-3 font-bold text-3xl">
+          Where TradingLab has been listed on?
+        </h2>
+        <img
+          src="/articles/4_CommunityLinks/community_logos.png"
+          class="xs:h-64 sm:h-96 rounded-xl p-2 m-auto"
+          alt="Crypto Community Listed">
+        {#each Object.entries(platforms) as [_, platform]}
+        <div>
+          <a href="{platform.url}" target="_blank">
+            <h3 class="mt-6 mb-3 font-bold text-2xl flex flex-row justify-start items-center space-x-2">
+              <div>
+                {platform.textDisplay}
+              </div>
+              <Arrow color={'text-indigo-400'}/>
+            </h3>
           </a>
+          <p>
+            {platform.text} 
+          </p>
         </div>
+        {/each}
         <h2 class="mt-6 mb-3 font-bold text-3xl">
-          Competition's prizes
+          A final word
         </h2>
         <p>
-          The the total prize pool is around 80$. The three top predictions will win:
-          <li>10 MM + 100 LAB</li>
-          <li>5 MM + 50 LAB</li>
-          <li>3 MM + 3 LAB</li>
-        </p>
-        <h2 class="mt-6 mb-3 font-bold text-3xl">
-          Million Token
-        </h2>
-        <p>
-          We have decided to use Million Token as main coin for our prizes
-          because of its unbeatable tokenomics. There are only 1'000'000 tokens in circulation,
-          this makes extremely easy to understand the total prize of the competition.
-          At the time of this writing 1 MM token is worth around 5$, so in total
-          the winner will receive around 50$.
-          Check out more about Million Token
-          <u><a href="https://www.milliontoken.org/" target="_blank">
-          on their official website</a></u>.
-        </p>
-        <h2 class="mt-6 mb-3 font-bold text-3xl">
-          TradingLab Token
-        </h2>
-        <p>
-          In order to engage more our crypto community with TradingLab platform,
-          we have created a native token which will be used in the future
-          in multiple ways. For the moment this token will be distributed
-          amount the competition's participants, rewarding user that will
-          interact more and more with the platform.
-          Check more information about TradingLab token 
-          <u><a href="https://polygonscan.com/token/0x01962c00c783ce44c5b031c07435f2dc4a627394" rel="_blank">on the official page
-          on Polyscan</a></u>.
-        </p>
-        <h2 class="mt-6 mb-3 font-bold text-3xl">
-          Thanks
-        </h2>
-        <p>
-          We want to express our gratitude to the Million Token community
-          for the warm support during the development of this first competition.<br>
-          The following members in particular:
-          <li><u><a href="https://twitter.com/R3WIREDMM" rel="_blank">R3WIREDMM</a></u></li>
-          <li><u><a href="https://twitter.com/simonsaysz" rel="_blank">CryptoQueen24</a></u></li>
-          <li><u><a href="https://twitter.com/NFTYoutube" rel="_blank">NFT Daily</a></u></li>
-          <li><u><a href="https://twitter.com/MetaMedallist" rel="_blank">Mad Max</a></u></li>
-          <li><u><a href="https://twitter.com/Reprobus2" rel="_blank">Reprobus2</a></u></li>
-        </p>
+          TradingLab wants to officialy and publicly thank all the crypto
+          communities listed above for their kindness and availability.
+          All of them have demonestrated professionalism and fast responses,
+          so guys, thank you so much!
       </div>
     </div>
   </div>
@@ -89,28 +122,28 @@
 </div>
 
 <MetaTags
-  title="TradingLab - Crypto Competition Announcement"
-  description="Building a crypto community around an online  service requires the development of innovative marketing strategies. We are thrilled today to publicly announce to our crypto community how TradingLab has prepared a first crypto competition in which you are invited to guess how much a Bitcoin will be worth at the end of May 2022."
+  title="Tradinglab Gains Visibility"
+  description="For TradingLab, being listed by crypto communities is a mandatory step to grow for several reasons. First of all, to get listed it is necessary to  pass an initial screen of questions. If those questions are not properly addressed, the application is rejected. So it is always a good exercise trying to get listed."
   canonical="https://blog.tradinglab.xyz/"
   openGraph={{
-    url: 'https://blog.tradinglab.xyz/crypto_competition_announcement',
+    url: 'https://blog.tradinglab.xyz/tradinglab_crypto_community_gains_visibility',
     type: 'article',
-    title: 'TradingLab - Crypto Comeptition Announcement',
-    description: 'Building a crypto community around an online  service requires the development of innovative marketing strategies. We are thrilled today to publicly announce to our crypto community how TradingLab has prepared a first crypto competition in which you are invited to guess how much a Bitcoin will be worth at the end of May 2022.',
+    title: 'Tradinglab Gains Visibility',
+    description: 'For TradingLab, being listed by crypto communities is a mandatory step to grow for several reasons. First of all, to get listed it is necessary to  pass an initial screen of questions. If those questions are not properly addressed, the application is rejected. So it is always a good exercise trying to get listed.',
     images: [
       {
-        url: 'https://blog.tradinglab.xyz/articles/2_FirstCompetition/btcmm.png',
+        url: 'https://blog.tradinglab.xyz/articles/4_CommunityLinks/community_logos.png',
         width: 804,
         height: 755,
-        alt: 'Bitcoin and Million Token'
+        alt: 'Crypto Community in which TradingLab is listed on'
       }
     ]
   }}
   twitter={{
     cardType: 'summary',
-    title: 'TradingLab - Crypto Competition Announcement',
-    description: 'Building a crypto community around an online  service requires the development of innovative marketing strategies. We are thrilled today to publicly announce to our crypto community how TradingLab has prepared a first crypto competition in which you are invited to guess how much a Bitcoin will be worth at the end of May 2022.',
-    image: 'https://blog.tradinglab.xyz/articles/2_FirstCompetition/btcmm.png',
-    imageAlt: 'Bitcoin and Million Token'
+    title: 'Tradinglab Gains Visibility',
+    description: 'For TradingLab, being listed by crypto communities is a mandatory step to grow for several reasons. First of all, to get listed it is necessary to  pass an initial screen of questions. If those questions are not properly addressed, the application is rejected. So it is always a good exercise trying to get listed.',
+    image: 'https://blog.tradinglab.xyz/articles/4_CommunityLinks/community_logos.png',
+    imageAlt: 'Crypto communities in which Tradinglab is listed on'
   }}
 />

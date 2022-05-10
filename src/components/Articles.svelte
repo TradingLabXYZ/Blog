@@ -27,11 +27,11 @@
       </div>
       <div class="flex xs:flex-col sm:flex-row xs:text-md sm:text-xl justify-center align-middle items-center">
         <p class="xs:px-4 sm:px-12 space-y-4 xs:mt-4 sm:mt-8 text-justify sm:max-w-xl">
-          Being listed by crypto communities is a mandatory step for several
-          reasons. First of all in order to get listed it is necessary to 
+          For TradingLab, being listed by crypto communities is a mandatory 
+          step to grow for several reasons. First of all, to get listed it is necessary to 
           pass an initial screen of questions. If those questions are not
-          properly addressed, the application is rejected.
-          So it is always a good exercise...
+          properly addressed, the application is rejected. So it is always a 
+          good exercise trying to get listed because it is possible to...
         </p>
         <img
           src="/articles/4_CommunityLinks/community_logos.png"
