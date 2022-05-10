@@ -1,21 +1,14 @@
 <script context="module" lang="ts">
-	/* export const prerender = true; */
   import { MetaTags } from 'svelte-meta-tags';
   import Header from '../components/Header.svelte';
   import Footer from '../components/Footer.svelte';
-</script>
-
-<script>
-  import { page } from '$app/stores';
-import { listen } from 'svelte/internal';
-  const source = $page.url.searchParams.get('source');
 </script>
 
 <div>
   <Header/>
   <div class="bg-universe text-cream py-12 tracking-wider leading-8 text-xl">
     <div class="xs:w-10/12 lg:w-1/2 m-auto">
-      <h1 class=" mb-3 xs:text-5xl sm:text-6xl">
+      <h1 class=" mb-3 xs:text-5xl sm:text-6xl py-6">
         Crypto Community Presentation
       </h1>
       <div class="xs:text-left sm:text-justify">

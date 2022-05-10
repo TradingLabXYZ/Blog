@@ -9,7 +9,7 @@
   <Header/>
   <div class="bg-universe text-cream py-12 tracking-wider leading-8 text-xl">
     <div class="xs:w-10/12 lg:w-1/2 m-auto">
-      <h1 class=" mb-3 text-6xl">
+      <h1 class=" mb-3 xs:text-5xl sm:text-6xl py-6">
         Initial Evolution
       </h1>
       <div class="xs:text-left sm:text-justify">

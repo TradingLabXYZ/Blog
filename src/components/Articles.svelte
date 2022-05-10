@@ -14,6 +14,32 @@
   </div>
   <div class="flex flex-col justify-center xs:space-y-8 sm:space-y-20 my-8 xs:w-11/12 sm:w-3/5 m-auto">
 
+    <!-- FOURTH ARTICLE -->
+    <a href="/tradinglab_crypto_community_gains_visibility"
+      class="flex flex-col bg-sandpurple xs:p-2 sm:p-4 rounded-md">
+      <div class="bg-oldpurple flex xs:flex-col sm:flex-row space-x-4 align-middle items-center justify-center py-2">
+        <h3 class="text-md">
+          10 May 2022
+        </h3>
+        <h2 class="font-bold text-3xl text-center">
+          TradingLab Gains Visibility
+        </h2>
+      </div>
+      <div class="flex xs:flex-col sm:flex-row xs:text-md sm:text-xl justify-center align-middle items-center">
+        <p class="xs:px-4 sm:px-12 space-y-4 xs:mt-4 sm:mt-8 text-justify sm:max-w-xl">
+          For TradingLab, being listed by crypto communities is a mandatory 
+          step to grow for several reasons. First of all, to get listed it is necessary to 
+          pass an initial screen of questions. If those questions are not
+          properly addressed, the application is rejected. So it is always a 
+          good exercise trying to get listed because it is possible to...
+        </p>
+        <img
+          src="/articles/4_CommunityLinks/community_logos.png"
+          class="xs:h-28 sm:h-40 rounded-xl p-2"
+          alt="TradingLab hero section">
+      </div>
+    </a>
+
     <!-- THIRD ARTICLE -->
     <a href="/crypto_community_presentation"
       class="flex flex-col bg-sandpurple xs:p-2 sm:p-4 rounded-md">
