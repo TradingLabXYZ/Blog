@@ -111,10 +111,10 @@ const platforms = {
           A final word
         </h2>
         <p>
-          TradingLab wants to officialy and publicly thank all the crypto
-          communities listed above for their kindness and availability.
-          All of them have demonestrated professionalism and fast responses,
-          so guys, thank you so much!
+        TradingLab wants to officially and publicly thank all the crypto 
+        communities listed above for their kindness and availability. 
+        They all have demonstrated professionalism and fast responses, 
+        so guys, thank you so much!
       </div>
     </div>
   </div>
