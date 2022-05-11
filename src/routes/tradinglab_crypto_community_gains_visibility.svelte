@@ -60,7 +60,8 @@ const platforms = {
       <div class="xs:text-left sm:text-justify">
         <p>
         For TradingLab, being listed by crypto communities is a mandatory 
-        step to grow for several reasons.
+        step to keep growing. This article describes the main reasons, 
+        as well as an overview of all our partners.
         </p><br>
         <p>
           First of all, to get listed it is necessary to 
